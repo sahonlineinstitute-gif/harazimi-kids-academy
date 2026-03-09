@@ -1,107 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<header>
-
-<img src="logo.png" width="150">
-
-<h1>Sheikh Aliyu Harazimi Kids Islamic Academy</h1>
-
-<p>Online Islamic Education for Children</p>
-
-</header>
-<title>Sheikh Aliyu Harazimi Kids Islamic Academy</title>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sheikh Aliyu Harazimi Online Islamic Institute</title>
 
 <style>
 
 body{
 margin:0;
 font-family:Arial;
-background:#f4f8f4;
+background:#f4f7fb;
 }
 
-header{
-background:#0f5132;
-color:white;
-text-align:center;
-padding:40px;
-}
+/* NAVBAR */
 
 nav{
-background:white;
-padding:15px;
-text-align:center;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
+background:#0b6e4f;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 30px;
 }
 
 nav a{
-margin:15px;
+color:white;
 text-decoration:none;
-color:#333;
+margin-left:15px;
 font-weight:bold;
 }
 
+.language button{
+margin-left:5px;
+}
+
+/* HERO */
+
 .hero{
-background:#e8f5e9;
-padding:80px 20px;
+background:linear-gradient(135deg,#0b6e4f,#1fa67a);
+color:white;
 text-align:center;
+padding:100px 20px;
 }
 
 .hero h1{
-font-size:38px;
-color:#0f5132;
+font-size:40px;
 }
+
+/* BUTTON */
 
 .button{
-background:#198754;
-color:white;
+display:inline-block;
 padding:15px 30px;
-border:none;
-border-radius:6px;
-font-size:16px;
-cursor:pointer;
+background:#ff9800;
+color:white;
+text-decoration:none;
+border-radius:30px;
+margin-top:20px;
 }
 
-.section{
+/* SECTIONS */
+
+section{
 padding:60px 20px;
-max-width:900px;
+max-width:1000px;
 margin:auto;
 }
 
-.course-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+h2{
+text-align:center;
+color:#0b6e4f;
 }
 
-.course{
+/* CARDS */
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+.card{
 background:white;
 padding:25px;
 border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
 text-align:center;
 }
+
+/* LOGIN */
+
+.login{
+max-width:400px;
+margin:auto;
+background:white;
+padding:30px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
 
 footer{
-background:#0f5132;
+background:#111;
 color:white;
-padding:30px;
 text-align:center;
-}
-
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px 20px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
+padding:30px;
 }
 
 </style>
@@ -110,163 +119,258 @@ font-weight:bold;
 
 <body>
 
-<header>
-
-<img src="logo.png" width="140">
-
-<h1>Sheikh Aliyu Harazimi Kids Islamic Academy</h1>
-
-<p>Online Islamic Education for Children</p>
-
-</header>
-
 <nav>
 
-<a href="#program">Program</a>
-<a href="#courses">Courses</a>
-<a href="#schedule">Schedule</a>
-<a href="#requirements">Requirements</a>
-<a href="#lesson">Lessons</a>
-<a href="#classroom">Classroom</a>
+<div><strong>Harazimi Institute</strong></div>
+
+<div>
+
+<a href="#">Home</a>
+<a href="#programs">Programs</a>
+<a href="#subjects">Subjects</a>
+<a href="#portal">Student Portal</a>
+<a href="#contact">Contact</a>
+
+</div>
+
+<div class="language">
+
+<button onclick="setLanguage('en')">EN</button>
+<button onclick="setLanguage('ar')">AR</button>
+<button onclick="setLanguage('ha')">HA</button>
+
+</div>
 
 </nav>
 
 <div class="hero">
 
-<h1>Welcome to Our Academy</h1>
+<h1 id="title">
+Sheikh Aliyu Harazimi Online Islamic Institute
+</h1>
 
-<p>Helping children build a strong Islamic foundation through Qur'an learning, Islamic manners, and Arabic language.</p>
+<p>Building a Generation of Qur'an and Knowledge</p>
 
-<a href="https://tally.so/r/5BkBDM" target="_blank">
-<button class="button">Apply for Admission</button>
+<a class="button" href="https://tally.so/r/5BkBDM" target="_blank">
+Apply for Admission
 </a>
 
 </div>
 
-<div class="section" id="program">
+<section id="programs">
 
-<h2>About the Program</h2>
+<h2>Our Programs</h2>
 
-<p>
-Sheikh Aliyu Harazimi Kids Islamic Academy is a home learning Islamic program designed for children aged 4–6 years.
+<div class="cards">
+
+<div class="card">
+<h3>Adult Program</h3>
+<p>9 months Islamic studies program.</p>
+</div>
+
+<div class="card">
+<h3>Kids Program</h3>
+<p>2 years Qur'an memorization program.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="subjects">
+
+<h2>Subjects</h2>
+
+<div class="cards">
+
+<div class="card">Qur'an</div>
+<div class="card">Hadith</div>
+<div class="card">Seerah</div>
+<div class="card">Fiqh</div>
+<div class="card">Arabic</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Teacher</h2>
+
+<p style="text-align:center">
+
+Sheikh Habibu Aliyu Harazimi
+
 </p>
 
-<p>
-The program lasts for two years and helps children build a strong Islamic foundation through Qur'an learning, Islamic manners, and basic Arabic.
+</section>
+
+<section>
+
+<h2>Parents Message</h2>
+
+<p style="text-align:center">
+
+Parents are encouraged to assist their children during the online lessons.
+
 </p>
 
-</div>
+</section>
 
-<div class="section" id="courses">
+<section id="portal">
 
-<h2>Our Courses</h2>
+<h2>Student Portal</h2>
 
-<div class="course-grid">
+<div class="login">
 
-<div class="course">
-<h3>Qur'an Learning</h3>
-<p>Teaching children how to read the Qur'an with Tajweed.</p>
-</div>
+<input type="email" id="email" placeholder="Email" style="padding:10px;width:90%;margin:10px">
 
-<div class="course">
-<h3>Arabic Language</h3>
-<p>Step-by-step Arabic learning for children.</p>
-</div>
+<input type="password" id="password" placeholder="Password" style="padding:10px;width:90%;margin:10px">
 
-<div class="course">
-<h3>Islamic Studies</h3>
-<p>Teaching Islamic knowledge and good manners.</p>
-</div>
+<button onclick="login()" style="padding:12px 20px;background:#0b6e4f;color:white;border:none;border-radius:6px">
+
+Login
+
+</button>
 
 </div>
 
-</div>
+</section>
 
-<div class="section" id="schedule">
+<section>
 
-<h2>Class Schedule</h2>
+<h2>Student Dashboard</h2>
 
-<p>Classes are held four days a week:</p>
+<div class="cards">
 
-<ul>
+<div class="card">
 
-<li>Monday</li>
-<li>Tuesday</li>
-<li>Wednesday</li>
-<li>Thursday</li>
+<h3>Online Classroom</h3>
 
-</ul>
+<a href="https://classroom.google.com/h" target="_blank">Open Classroom</a>
 
 </div>
 
-<div class="section" id="requirements">
+<div class="card">
 
-<h2>Home Learning Requirements</h2>
+<h3>Course Library</h3>
 
-<p>
-This program is a home learning program. Children will learn from home with the help of their parents.
+<a href="#">Open Lessons</a>
+
+</div>
+
+<div class="card">
+
+<h3>Assignments</h3>
+
+<p>Submit through Google Classroom</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Student Progress</h2>
+
+<progress value="40" max="100"></progress>
+
+</section>
+
+<section>
+
+<h2>Generate Certificate</h2>
+
+<input type="text" id="studentName" placeholder="Student Name">
+
+<button onclick="generateCertificate()">Generate</button>
+
+<p id="certificateOutput"></p>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<p style="text-align:center">
+
+Gwale Local Government  
+Kano State, Nigeria
+
+<br><br>
+
+Phone: 08099289368
+
 </p>
 
-<p>Parents should prepare:</p>
-
-<ul>
-
-<li>A copy of the Holy Qur'an</li>
-<li>Writing notebook</li>
-<li>Pen or pencil</li>
-<li>Quiet study space at home</li>
-<li>Parent or guardian support</li>
-
-</ul>
-
-</div>
-
-<div class="section" id="lesson">
-
-<h2>Lesson Description</h2>
-
-<p>
-Our lessons are designed to make learning easy and enjoyable for young children.
-</p>
-
-<ul>
-
-<li>Learning how to read the Holy Qur'an</li>
-<li>Practicing Islamic manners</li>
-<li>Learning basic Arabic words</li>
-<li>Developing love for Islamic teachings</li>
-
-</ul>
-
-</div>
-
-<div class="section" id="classroom">
-
-<h2>Online Classroom</h2>
-
-<p>Students can join their lessons through Google Classroom.</p>
-
-<a href="https://classroom.google.com/h" target="_blank">
-
-<button class="button">Join Classroom</button>
-
-</a>
-
-</div>
+</section>
 
 <footer>
 
-<p>Contact: 08099289368</p>
-
-<p>© Sheikh Aliyu Harazimi Kids Islamic Academy</p>
+<p>© 2026 Sheikh Aliyu Harazimi Online Islamic Institute</p>
 
 </footer>
 
-<a class="whatsapp" href="https://wa.me/2348099289368" target="_blank">
+<script>
 
-Chat on WhatsApp
+function login(){
 
-</a>
+var email=document.getElementById("email").value;
+var password=document.getElementById("password").value;
+
+if(email=="student@harazimi.com" && password=="12345"){
+
+alert("Login successful");
+
+}
+
+else{
+
+alert("Incorrect login");
+
+}
+
+}
+
+function generateCertificate(){
+
+var name=document.getElementById("studentName").value;
+
+document.getElementById("certificateOutput").innerHTML=
+
+"Certificate: "+name+" has completed the program.";
+
+}
+
+function setLanguage(lang){
+
+if(lang=="ar"){
+
+document.getElementById("title").innerText=
+"معهد الشيخ علي حرازم الإسلامي";
+
+}
+
+if(lang=="ha"){
+
+document.getElementById("title").innerText=
+"Cibiyar Sheikh Aliyu Harazimi Ta Intanet";
+
+}
+
+if(lang=="en"){
+
+document.getElementById("title").innerText=
+"Sheikh Aliyu Harazimi Online Islamic Institute";
+
+}
+
+}
+
+</script>
 
 </body>
 </html>
